@@ -1,4 +1,4 @@
-const VERSION = 'promatik-0.0.2';
+const VERSION = 'dianaportela-0.0.2';
 
 const fetchAndCache = async request => {
   const result = await fetch(request);
@@ -9,7 +9,7 @@ const fetchAndCache = async request => {
 self.onfetch = e => {
   if (e.request.url.match(/\/data|\/pdf|google-analytics.com|googletagmanager.com|chrome-extension/)) return;
 
-  e.respondWith(navigator.onLine && (e.request.destination === 'document' || !e.request.url.match(/https?:\/\/promatik.pt/))
+  e.respondWith(navigator.onLine && (e.request.destination === 'document' || !e.request.url.match(/https?:\/\/dianaportela.pt/))
     ? fetchAndCache(e.request)
     : caches.open(VERSION).then(cache => cache
       .match(e.request.url, { ignoreSearch: false })

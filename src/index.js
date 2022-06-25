@@ -200,60 +200,6 @@ const app = {
     // Current age
     const age = (data.death || new Date().getTime()) - data.birth;
 
-    // Stackoverflow
-    fetch(
-      'https://api.stackexchange.com/2.2/users/1192479?site=stackoverflow'
-    ).then(response => response.json().then(json => {
-      const diff = (new Date() / 1000 - new Date(json.items[0].last_access_date)) / 60;
-      let divider; let unit;
-
-      if (diff < 60) {
-        divider = 1;
-        unit = 'minute';
-      } else if (diff < 1440) {
-        divider = 60;
-        unit = 'hour';
-      } else {
-        divider = 1440;
-        unit = 'day';
-      }
-
-      const value = (diff / divider) | 0;
-
-      fillStatsRow('stackoverflow', [
-        json.items[0].reputation,
-        json.items[0].badge_counts.gold,
-        json.items[0].badge_counts.silver,
-        json.items[0].badge_counts.bronze,
-        value > 0
-          ? `${value} ${unit}${value !== 1 ? 's' : ''} ago`
-          : 'just now',
-      ]);
-    })).catch(() => {
-      fillStatsRow('stackoverflow');
-    });
-
-    // Github
-    Promise.all(
-      [
-        'https://api.github.com/users/promatik',
-        'https://api.github.com/users/promatik/orgs',
-        'https://api.github.com/users/promatik/repos?per_page=100',
-      ].map(u => fetch(u).then(response => response.json()))
-    ).then(responses => {
-      fillStatsRow('github', [
-        responses[2]
-          .map(repo => repo.stargazers_count)
-          .reduce((a, b) => a + b),
-        responses[2].map(repo => repo.forks).reduce((a, b) => a + b),
-        responses[0].public_repos,
-        responses[0].public_gists,
-        responses[1].length,
-      ]);
-    }).catch(() => {
-      fillStatsRow('github');
-    });
-
     // Car
     const km = Object.values(stats.car.km).reduce((a, b) => a + b)
       + ((Date.now() - new Date(stats.car.current_average.since)) / 8784e4)

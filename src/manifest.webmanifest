@@ -1,9 +1,9 @@
 {
-  "name": "promatik",
-  "short_name": "promatik",
-  "theme_color": "#205081",
+  "name": "Diana Portela",
+  "short_name": "Diana Portela",
+  "theme_color": "#c69926",
   "display": "fullscreen",
-  "background_color": "#205081",
+  "background_color": "#c69926",
   "orientation": "portrait",
   "start_url": "/",
   "scope": "/",
@@ -56,13 +56,6 @@
       "type": "image/png",
       "purpose": "any maskable",
       "density": "4.0"
-    },
-    {
-      "src": "/ico/android-icon-1024x1024.png",
-      "sizes": "1024x1024",
-      "type": "image/png",
-      "purpose": "any maskable",
-      "density": "4.5"
     }
   ]
 }

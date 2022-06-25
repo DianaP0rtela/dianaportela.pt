@@ -2,69 +2,232 @@
   "metadata": {
     "name": "promatik.pt",
     "lastOpened": 0,
-    "created": 1587862241626
+    "created": 1656154832320
   },
   "iconSets": [
     {
       "selection": [
         {
+          "order": 1,
+          "id": 2,
+          "name": "paint",
+          "prevSize": 32
+        },
+        {
+          "order": 2,
+          "id": 1,
+          "name": "water",
+          "prevSize": 32
+        },
+        {
+          "order": 1,
+          "id": 0,
+          "prevSize": 32,
+          "name": "book"
+        }
+      ],
+      "id": 5,
+      "metadata": {
+        "name": "IcoMoon - Free (subset)",
+        "licenseURL": "https://icomoon.io/#icons-icomoon",
+        "license": "GPL or CC BY 4.0",
+        "designerURL": "http://keyamoon.com",
+        "designer": "Keyamoon",
+        "url": "https://icomoon.io/#icons-icomoon",
+        "iconsHash": 767040192,
+        "importSize": {
+          "width": 32,
+          "height": 32
+        }
+      },
+      "height": 1024,
+      "prevSize": 32,
+      "icons": [
+        {
+          "id": 2,
+          "paths": [
+            "M1024 576v-384h-192v-64c0-35.2-28.8-64-64-64h-704c-35.2 0-64 28.8-64 64v192c0 35.2 28.8 64 64 64h704c35.2 0 64-28.8 64-64v-64h128v256h-576v128h-32c-17.674 0-32 14.326-32 32v320c0 17.674 14.326 32 32 32h128c17.674 0 32-14.326 32-32v-320c0-17.674-14.326-32-32-32h-32v-64h576zM768 192h-704v-64h704v64z"
+          ],
+          "attrs": [
+            {}
+          ],
+          "isMulticolor": false,
+          "isMulticolor2": false,
+          "tags": [
+            "paint-format",
+            "format",
+            "color"
+          ],
+          "grid": 16
+        },
+        {
+          "id": 1,
+          "paths": [
+            "M864.626 473.162c-65.754-183.44-205.11-348.15-352.626-473.162-147.516 125.012-286.87 289.722-352.626 473.162-40.664 113.436-44.682 236.562 12.584 345.4 65.846 125.14 198.632 205.438 340.042 205.438s274.196-80.298 340.040-205.44c57.27-108.838 53.25-231.962 12.586-345.398zM738.764 758.956c-43.802 83.252-132.812 137.044-226.764 137.044-55.12 0-108.524-18.536-152.112-50.652 13.242 1.724 26.632 2.652 40.112 2.652 117.426 0 228.668-67.214 283.402-171.242 44.878-85.292 40.978-173.848 23.882-244.338 14.558 28.15 26.906 56.198 36.848 83.932 22.606 63.062 40.024 156.34-5.368 242.604z"
+          ],
+          "attrs": [
+            {}
+          ],
+          "isMulticolor": false,
+          "isMulticolor2": false,
+          "tags": [
+            "droplet",
+            "color",
+            "water"
+          ],
+          "grid": 16
+        },
+        {
+          "id": 0,
+          "paths": [
+            "M896 128v832h-672c-53.026 0-96-42.98-96-96s42.974-96 96-96h608v-768h-640c-70.398 0-128 57.6-128 128v768c0 70.4 57.602 128 128 128h768v-896h-64z",
+            "M224.056 832v0c-0.018 0.002-0.038 0-0.056 0-17.672 0-32 14.326-32 32s14.328 32 32 32c0.018 0 0.038-0.002 0.056-0.002v0.002h607.89v-64h-607.89z"
+          ],
+          "attrs": [
+            {},
+            {}
+          ],
+          "isMulticolor": false,
+          "isMulticolor2": false,
+          "tags": [
+            "book",
+            "read",
+            "reading"
+          ],
+          "grid": 16
+        }
+      ],
+      "invisible": false,
+      "colorThemes": []
+    },
+    {
+      "selection": [
+        {
+          "order": 61,
+          "id": 0,
+          "name": "orcid",
+          "prevSize": 32
+        }
+      ],
+      "id": 6,
+      "metadata": {
+        "name": "Untitled Set",
+        "importSize": {
+          "width": 1024,
+          "height": 1024
+        }
+      },
+      "height": 1024,
+      "prevSize": 32,
+      "icons": [
+        {
+          "id": 0,
+          "paths": [
+            "M512 0c-282.795 0-512 229.205-512 512s229.205 512 512 512 512-229.205 512-512-229.205-512-512-512zM314.411 186.795c22.4 0 40.405 18.389 40.405 40.405s-18.005 40.405-40.405 40.405c-22.286-0.073-40.333-18.119-40.405-40.398v-0.007c0-22.4 18.005-40.405 40.405-40.405zM283.605 316.416h61.611v428.416h-61.611zM435.584 316.416h166.4c158.379 0 228.011 113.195 228.011 214.4 0 109.995-86.016 214.4-227.2 214.4h-167.211zM497.195 372.011v317.611h98.005c139.605 0 171.605-105.984 171.605-158.805 0-86.016-54.784-158.805-174.805-158.805z"
+          ],
+          "attrs": [
+            {}
+          ],
+          "isMulticolor": false,
+          "isMulticolor2": false,
+          "grid": 0,
+          "tags": [
+            "orcid"
+          ]
+        }
+      ],
+      "invisible": false,
+      "colorThemes": []
+    },
+    {
+      "selection": [],
+      "id": 4,
+      "metadata": {
+        "name": "Brands (subset)",
+        "importSize": {
+          "width": 32,
+          "height": 32
+        },
+        "url": "https://simpleicons.org",
+        "designer": "N/A",
+        "license": "CC0 1.0 Universal",
+        "licenseURL": "https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md",
+        "iconsHash": 1591697341
+      },
+      "height": 1024,
+      "prevSize": 32,
+      "icons": [],
+      "invisible": false,
+      "colorThemes": []
+    },
+    {
+      "selection": [
+        {
           "id": 1,
           "order": 50,
-          "ligatures": ""
+          "ligatures": "",
+          "prevSize": 32,
+          "name": "airplane"
         },
         {
           "id": 2,
           "order": 49,
-          "ligatures": ""
-        },
-        {
-          "id": 3,
-          "order": 48,
-          "ligatures": ""
+          "ligatures": "",
+          "prevSize": 32,
+          "name": "car"
         },
         {
           "id": 12,
           "order": 39,
-          "ligatures": ""
+          "ligatures": "",
+          "prevSize": 32,
+          "name": "cv"
         },
         {
           "id": 4,
           "order": 47,
-          "ligatures": ""
+          "ligatures": "",
+          "prevSize": 32,
+          "name": "facebook"
         },
         {
           "id": 5,
           "order": 46,
-          "ligatures": ""
-        },
-        {
-          "id": 6,
-          "order": 45,
-          "ligatures": ""
+          "ligatures": "",
+          "prevSize": 32,
+          "name": "github"
         },
         {
           "id": 7,
           "order": 44,
-          "ligatures": ""
+          "ligatures": "",
+          "prevSize": 32,
+          "name": "linkedin"
         },
         {
           "id": 11,
           "order": 40,
-          "ligatures": ""
+          "ligatures": "",
+          "prevSize": 32,
+          "name": "mail"
         },
         {
           "id": 8,
           "order": 43,
-          "ligatures": ""
+          "ligatures": "",
+          "prevSize": 32,
+          "name": "map"
         },
         {
           "id": 10,
           "order": 41,
-          "ligatures": ""
+          "ligatures": "",
+          "prevSize": 32,
+          "name": "profile"
         },
         {
           "id": 9,
-          "order": 42,
+          "order": 0,
           "ligatures": ""
         }
       ],
@@ -82,9 +245,12 @@
           ],
           "isMulticolor": false,
           "isMulticolor2": false,
-          "tags": ["airplane"],
+          "tags": [
+            "airplane"
+          ],
           "defaultCode": 59648,
-          "grid": 0
+          "grid": 0,
+          "attrs": []
         },
         {
           "id": 1,
@@ -93,20 +259,12 @@
           ],
           "isMulticolor": false,
           "isMulticolor2": false,
-          "tags": ["car"],
-          "defaultCode": 59649,
-          "grid": 0
-        },
-        {
-          "id": 2,
-          "paths": [
-            "M415.2 339.2l96.8 359.2 96.8-359.2 317.6-55.2-58.4 89.6-196.8 24-24 79.2 128-13.6-44.8 68.8-104 10.4-113.6 348.8-113.6-348.8-104-10.4-44.8-68.8 128 13.6-24-79.2-196.8-24-58.4-89.6 316 55.2z"
+          "tags": [
+            "car"
           ],
-          "isMulticolor": false,
-          "isMulticolor2": false,
-          "tags": ["codesignal"],
-          "defaultCode": 59650,
-          "grid": 0
+          "defaultCode": 59649,
+          "grid": 0,
+          "attrs": []
         },
         {
           "id": 11,
@@ -115,9 +273,12 @@
           ],
           "isMulticolor": false,
           "isMulticolor2": false,
-          "tags": ["cv"],
+          "tags": [
+            "cv"
+          ],
           "defaultCode": 59659,
-          "grid": 0
+          "grid": 0,
+          "attrs": []
         },
         {
           "id": 3,
@@ -126,9 +287,12 @@
           ],
           "isMulticolor": false,
           "isMulticolor2": false,
-          "tags": ["facebook"],
+          "tags": [
+            "facebook"
+          ],
           "defaultCode": 59651,
-          "grid": 0
+          "grid": 0,
+          "attrs": []
         },
         {
           "id": 4,
@@ -137,20 +301,12 @@
           ],
           "isMulticolor": false,
           "isMulticolor2": false,
-          "tags": ["github"],
-          "defaultCode": 59652,
-          "grid": 0
-        },
-        {
-          "id": 5,
-          "paths": [
-            "M645.6 864c-8.8 0-91.2-79.2-84.8-86.4 1.6-1.6 13.6-3.2 39.2-4 0-58.4 1.6-152.8 2.4-192 0-4.8-0.8-8-0.8-12.8h-177.6c0 16-0.8 80.8 3.2 162.4 0.8 10.4-3.2 13.6-12.8 13.6-22.4 0-44.8 0-68 0-8.8 0-12.8-3.2-12.8-13.6 2.4-74.4 6.4-187.2 0-472.8v-7.2c-21.6-0.8-36.8-2.4-38.4-4-6.4-6.4 76.8-86.4 85.6-86.4s91.2 80 84.8 86.4c-1.6 1.6-17.6 3.2-37.6 4v7.2c-5.6 57.6-4.8 176.8-5.6 234.4h178.4c0-10.4 0.8-77.6-2.4-186.4 0-7.2 2.4-11.2 9.6-11.2 24.8 0 49.6 0 73.6 0 8 0 10.4 4 10.4 12-8 425.6-1.6 396-1.6 468 20 0.8 37.6 2.4 39.2 4 6.4 4.8-75.2 84.8-84 84.8z"
+          "tags": [
+            "github"
           ],
-          "isMulticolor": false,
-          "isMulticolor2": false,
-          "tags": ["hackerrank"],
-          "defaultCode": 59653,
-          "grid": 0
+          "defaultCode": 59652,
+          "grid": 0,
+          "attrs": []
         },
         {
           "id": 6,
@@ -159,9 +315,12 @@
           ],
           "isMulticolor": false,
           "isMulticolor2": false,
-          "tags": ["linkedin"],
+          "tags": [
+            "linkedin"
+          ],
           "defaultCode": 59654,
-          "grid": 0
+          "grid": 0,
+          "attrs": []
         },
         {
           "id": 10,
@@ -170,9 +329,12 @@
           ],
           "isMulticolor": false,
           "isMulticolor2": false,
-          "tags": ["mail"],
+          "tags": [
+            "mail"
+          ],
           "defaultCode": 59658,
-          "grid": 0
+          "grid": 0,
+          "attrs": []
         },
         {
           "id": 7,
@@ -181,9 +343,12 @@
           ],
           "isMulticolor": false,
           "isMulticolor2": false,
-          "tags": ["map"],
+          "tags": [
+            "map"
+          ],
           "defaultCode": 59655,
-          "grid": 0
+          "grid": 0,
+          "attrs": []
         },
         {
           "id": 9,
@@ -192,9 +357,12 @@
           ],
           "isMulticolor": false,
           "isMulticolor2": false,
-          "tags": ["profile"],
+          "tags": [
+            "profile"
+          ],
           "defaultCode": 59657,
-          "grid": 0
+          "grid": 0,
+          "attrs": []
         },
         {
           "id": 8,
@@ -203,9 +371,12 @@
           ],
           "isMulticolor": false,
           "isMulticolor2": false,
-          "tags": ["stackoverflow"],
+          "tags": [
+            "stackoverflow"
+          ],
           "defaultCode": 59656,
-          "grid": 0
+          "grid": 0,
+          "attrs": []
         }
       ]
     }
