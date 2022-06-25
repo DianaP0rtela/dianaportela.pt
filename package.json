@@ -1,7 +1,7 @@
 {
-  "name": "promatik-pt",
+  "name": "dianaportela-pt",
   "version": "0.0.1",
-  "description": "Development project for promatik.pt",
+  "description": "Development project for dianaportela.pt",
   "main": "index.html",
   "scripts": {
     "start": "npm run clear-cache && parcel src/index.html --open",

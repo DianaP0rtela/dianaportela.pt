@@ -4,7 +4,7 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "launch promatik.pt",
+      "name": "launch dianaportela.pt",
       "runtimeArgs": [
         "parcel",
         "index.html",
@@ -17,7 +17,7 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "build promatik.pt",
+      "name": "build dianaportela.pt",
       "runtimeArgs": [
         "parcel",
         "build",
