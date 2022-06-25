@@ -17,9 +17,6 @@ const app = {
     // Header age
     app.setAge();
 
-    // Stats
-    app.initStats();
-
     // Nav animation init
     app.navAnimation();
     nav.querySelector('svg').classList.remove('loading');
@@ -179,83 +176,6 @@ const app = {
   setAge: () => {
     // eslint-disable-next-line max-len
     window.age.innerHTML = new Date((data.death || Date.now()) - data.birth).getUTCFullYear() - 1970;
-  },
-
-  initStats: () => {
-    const { stats } = data;
-
-    // Fill function
-    const fillStatsRow = (row, rows = []) => {
-      const box = document.querySelector(`.stats [data="${row}"]`);
-      box
-        .querySelectorAll('em')
-        .forEach((elem, i) => { if (rows[i]) elem.innerHTML = rows[i]; });
-      box.classList.add('active');
-    };
-
-    // Proper number display
-    const numberFormat = n => new Intl.NumberFormat('uk').format(Math.round(n));
-    const numberFixed = n => n.toFixed(2).replace(/\.?0+$/, '');
-
-    // Current age
-    const age = (data.death || new Date().getTime()) - data.birth;
-
-    // Car
-    const km = Object.values(stats.car.km).reduce((a, b) => a + b)
-      + ((Date.now() - new Date(stats.car.current_average.since)) / 8784e4)
-        * stats.car.current_average.value;
-    const hours = km / 62;
-
-    fillStatsRow('car', [
-      numberFormat(km),
-      numberFormat(hours),
-      numberFixed(hours / (age / 36e7)),
-    ]);
-
-    // Airplane
-    fillStatsRow('airplane', [
-      numberFormat(stats.airplane.km),
-      stats.airplane.flights,
-      stats.airplane.countries.length,
-      stats.airplane.continents.length,
-      stats.airplane.islands.length,
-    ]);
-
-    // Map
-    const days = age / 864e5;
-    let abroad = Object.values(stats.map.abroad).reduce((a, b) => a + b);
-    if (stats.map.living_abroad_since) {
-      const d = (new Date() - new Date(stats.map.living_abroad_since)) / 864e5;
-      abroad += d;
-    }
-    fillStatsRow('map', [
-      numberFormat(days - abroad),
-      numberFormat(abroad),
-      numberFixed((abroad / days) * 100),
-    ]);
-
-    // Profile
-    const values = {
-      sleeping: 0,
-      eating: 0,
-      working: 0,
-      studing: 0,
-      exercising: 0,
-      commuting: 0,
-      coding: 0,
-    };
-    Object.keys(values).forEach(key => {
-      stats.profile[key].forEach(entry => {
-        const init = new Date(entry.range[0]);
-        const end = entry.range.length > 1 ? new Date(entry.range[1]) : new Date();
-        values[key] += ((end - init) * entry.average) / 14.4;
-      });
-    });
-
-    fillStatsRow(
-      'profile',
-      Object.values(values).map(e => numberFixed(e / age))
-    );
   },
 
   timeline: {
