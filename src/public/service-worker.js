@@ -7,7 +7,7 @@ const fetchAndCache = async request => {
 };
 
 self.onfetch = e => {
-  if (e.request.url.match(/\/data|\/pdf|google-analytics.com|googletagmanager.com/)) return;
+  if (e.request.url.match(/\/data|\/pdf|google-analytics.com|googletagmanager.com|chrome-extension/)) return;
 
   e.respondWith(navigator.onLine && (e.request.destination === 'document' || !e.request.url.match(/https?:\/\/dianaportela.pt/))
     ? fetchAndCache(e.request)
