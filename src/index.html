@@ -1,106 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>
+      Diana Portela, MD, Public Health Specialist | Data Scientist | IT
+      Management, dianaportela
+    </title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-language" content="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="mobile-web-app-capable" content="yes" />
 
-<head>
-  <title>Diana Portela, MD, Public Health Resident | Data Scientist | IT Management, dianaportela</title>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta http-equiv="Content-language" content="en" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="zone" content="PT" />
+    <meta name="author" content="Diana Portela" />
+    <meta name="developer" content="dianaportela" />
+    <meta name="image" content="/img/profile-512.jpg" />
+    <meta
+      name="description"
+      content="MD, Public Health Resident and PhD Student in Heath Data Scientist from Porto, Portugal. Get to know my work and my path!"
+    />
+    <meta
+      name="keywords"
+      content="Diana Portela, dianaportela, Public Health, Data Scientist, Santa Maria da Feira, Medical Doctor"
+    />
+    <meta name="rating" content="General" />
+    <meta name="geo.region" content="Portugal" />
+    <meta name="geo.placename" content="Porto" />
+    <meta name="geo.position" content="41.15;-8.6106" />
+    <meta name="robots" content="index,follow" />
 
-  <meta name="zone" content="PT" />
-  <meta name="author" content="Diana Portela" />
-  <meta name="developer" content="dianaportela" />
-  <meta name="image" content="/img/profile-512.jpg" />
-  <meta name="description" content="MD, Public Health Resident and PhD Student in Heath Data Scientist from Porto, Portugal. Get to know my work and my path!" />
-  <meta name="keywords" content="Diana Portela, dianaportela, Public Health, Data Scientist, Santa Maria da Feira, Medical Doctor" />
-  <meta name="rating" content="General" />
-  <meta name="geo.region" content="Portugal" />
-  <meta name="geo.placename" content="Porto" />
-  <meta name="geo.position" content="41.15;-8.6106" />
-  <meta name="robots" content="index,follow" />
+    <!-- App -->
+    <link rel="manifest" href="manifest.webmanifest" />
+    <each loop="item in [32, 96, 16]">
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="{{ item }}x{{ item }}"
+        href="/ico/favicon-{{ item }}x{{ item }}.png"
+      />
+    </each>
+    <meta name="application-name" content="dianaportela" />
+    <meta name="apple-mobile-web-app-title" content="dianaportela" />
+    <meta name="theme-color" content="#205081" />
 
-  <!-- App -->
-  <link rel="manifest" href="manifest.webmanifest" />
-  <each loop="item in [32, 96, 16]">
-    <link rel="icon" type="image/png" sizes="{{ item }}x{{ item }}" href="/ico/favicon-{{ item }}x{{ item }}.png" />
-  </each>
-  <meta name="application-name" content="dianaportela" />
-  <meta name="apple-mobile-web-app-title" content="dianaportela" />
-  <meta name="theme-color" content="#205081" />
+    <!-- Apple -->
+    <each loop="item in [76, 120, 152, 180]">
+      <link
+        rel="apple-touch-icon"
+        sizes="{{ item }}x{{ item }}"
+        href="/ico/apple-icon-{{ item }}x{{ item }}.png"
+      />
+    </each>
 
-  <!-- Apple -->
-  <each loop="item in [76, 120, 152, 180]">
-    <link rel="apple-touch-icon" sizes="{{ item }}x{{ item }}" href="/ico/apple-icon-{{ item }}x{{ item }}.png" />
-  </each>
+    <!-- Microsoft -->
+    <meta name="msapplication-TileColor" content="#205081" />
+    <meta
+      name="msapplication-TileImage"
+      content="/ico/android-icon-144x144.png"
+    />
 
-  <!-- Microsoft -->
-  <meta name="msapplication-TileColor" content="#205081" />
-  <meta name="msapplication-TileImage" content="/ico/android-icon-144x144.png" />
+    <!-- Facebook -->
+    <meta
+      property="og:title"
+      content="Diana Portela, Medical Doctor, dianaportela"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/img/profile-512.jpg" />
+    <meta
+      property="og:description"
+      content="MD, Public Health Resident and PhD Student in Heath Data Scientist from Porto, Portugal. Get to know my work and my path!"
+    />
+    <meta property="og:url" content="https://dianaportela.pt" />
+    <meta property="fb:admins" content="100000258524385" />
+    <meta property="fb:app_id" content="150154111693861" />
 
-  <!-- Facebook -->
-  <meta property="og:title" content="Diana Portela, Medical Doctor, dianaportela" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="/img/profile-512.jpg" />
-  <meta property="og:description" content="MD, Public Health Resident and PhD Student in Heath Data Scientist from Porto, Portugal. Get to know my work and my path!" />
-  <meta property="og:url" content="https://dianaportela.pt" />
-  <meta property="fb:admins" content="100000258524385" />
-  <meta property="fb:app_id" content="150154111693861" />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400&display=swap" rel="stylesheet">
+    <!-- Preload -->
+    <link rel="preload" href="index.js" as="script" />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://api.stackexchange.com" />
+    <link rel="preconnect" href="https://api.github.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
 
-  <!-- Preload -->
-  <link rel="preload" href="index.js" as="script" />
-  <link rel="preconnect" href="https://www.googletagmanager.com" />
-  <link rel="preconnect" href="https://api.stackexchange.com" />
-  <link rel="preconnect" href="https://api.github.com" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-</head>
+  <body>
+    <!-- Nav bar -->
+    <nav>
+      <include src="views/nav.html"></include>
+    </nav>
 
-<body>
-  <!-- Nav bar -->
-  <nav>
-    <include src="views/nav.html"></include>
-  </nav>
+    <!-- Main -->
+    <main>
+      <include src="views/main-story.html"></include>
+      <hr />
 
-  <!-- Main -->
-  <main>
-    <include src="views/main-story.html"></include>
-    <hr />
+      <include src="views/main-stats.html"></include>
+      <hr />
 
-    <include src="views/main-stats.html"></include>
-    <hr />
+      <include src="views/main-timeline.html"></include>
+    </main>
 
-    <include src="views/main-timeline.html"></include>
-  </main>
+    <!-- Footer -->
+    <footer>
+      <include src="views/footer.html"></include>
+    </footer>
 
-  <!-- Footer -->
-  <footer>
-    <include src="views/footer.html"></include>
-  </footer>
+    <!-- SVGs -->
+    <include src="views/defs.svg"></include>
 
-  <!-- SVGs -->
-  <include src="views/defs.svg"></include>
+    <script src="index.js"></script>
 
-  <script src="index.js"></script>
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Z4PKE5C0V1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-Z4PKE5C0V1");
+    </script>
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z4PKE5C0V1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-Z4PKE5C0V1');
-  </script>
-
-  <!-- Service Worker -->
-  <script>
-    if ('serviceWorker' in navigator) navigator.serviceWorker.register('/service-worker.js');
-  </script>
-
-</body>
-
+    <!-- Service Worker -->
+    <script>
+      if ("serviceWorker" in navigator)
+        navigator.serviceWorker.register("/service-worker.js");
+    </script>
+  </body>
 </html>
